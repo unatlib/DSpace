@@ -425,6 +425,7 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
         if(!browseParams.getFacetField().endsWith(".year")){
             // Create a clickable list of the alphabet
             org.dspace.app.xmlui.wing.element.List jumpList = jump.addList("jump-list", org.dspace.app.xmlui.wing.element.List.TYPE_SIMPLE, "alphabet");
+            org.dspace.app.xmlui.wing.element.List jumpList2 = jump.addList("jump-list2", org.dspace.app.xmlui.wing.element.List.TYPE_SIMPLE, "alphabet");
 
             //Create our basic url
             String basicUrl = generateURL("search-filter", params);
@@ -438,6 +439,13 @@ public class SearchFacetFilter extends AbstractDSpaceTransformer implements Cach
                 String linkUrl = basicUrl + "&" +  SearchFilterParam.STARTS_WITH +  "=" + Character.toString(c).toLowerCase();
                 jumpList.addItemXref(linkUrl, Character
                         .toString(c));
+            }
+            // Русский алфавит
+            for (char vv = 'А'; vv <= 'Я'; vv++)
+            {
+                String linkUrl = basicUrl + "&" +  SearchFilterParam.STARTS_WITH +  "=" + Character.toString(vv).toLowerCase();
+                jumpList2.addItemXref(linkUrl, Character
+                         .toString(vv));
             }
 
             // Create a free text field for the initial characters

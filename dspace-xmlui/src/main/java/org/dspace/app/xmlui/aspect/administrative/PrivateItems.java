@@ -392,6 +392,14 @@ public class PrivateItems extends AbstractDSpaceTransformer implements
                 jumpList.addItemXref(super.generateURL(PRIVATE_URL_BASE, letterQuery), Character
                         .toString(c));
             }
+            // Русский алфавит
+            List jumpList2 = jump.addList("jump-list2", List.TYPE_SIMPLE, "alphabet");
+            for (char vv = 'А'; vv <= 'Я'; vv++)
+            {
+                letterQuery.put(BrowseParams.STARTS_WITH, Character.toString(vv));
+                jumpList2.addItemXref(super.generateURL(PRIVATE_URL_BASE, letterQuery), Character
+                         .toString(vv));
+            }
 
             // Create a free text field for the initial characters
             Para jumpForm = jump.addPara();
