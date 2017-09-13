@@ -370,7 +370,7 @@ but in future, they should be refactored to a more relevant key prefix -->
 <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.title">Change permissions request</message>
 <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.trail">Change permissions request</message>
 <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.head">Change permissions request</message>
-<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.para1">You may use this occasion to reconsider the access restrictions on the document (to avoid having to respond to these requests), if there is no reason to keep it estricted. To do so, after inserting your name and e-mail (for authentication), click the button "Change to Open Access".</message>
+<message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.para1">You may use this occasion to reconsider the access restrictions on the document (to avoid having to respond to these requests), if there is no reason to keep it restricted. To do so, after inserting your name and e-mail (for authentication), click the button "Change to Open Access".</message>
 <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.name">Name</message>
 <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.email">E-mail</message>
 <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.name.error">The name is required</message>
