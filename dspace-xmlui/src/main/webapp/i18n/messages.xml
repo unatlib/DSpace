@@ -74,15 +74,16 @@
     -->
     <message key="xmlui.general.notice.default_head">Notice</message>
 
-
-
     <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
                   ArtifactBrowser Aspect
+
         NOTE: As of DSpace 6.0, the ArtifactBrowser Aspect was removed (in favor
         of the ViewArtifacts, BrowseArtifacts and SearchArtifacts aspects).
         However, many of its classes and corresponding i18n keys still exist as
         they are used by other aspects.
         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
     <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AbstractSearch has been removed. -->
     <!-- The following keys are still in use by Discovery's AbstractSearch -->
     <message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">Search produced no results.</message>
